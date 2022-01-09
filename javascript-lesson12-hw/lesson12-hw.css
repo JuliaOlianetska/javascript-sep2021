@@ -1,0 +1,12 @@
+.wrap {
+    background: pink;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.post {
+    width: 18%;
+    margin-bottom: 10px;
+    background: blueviolet;
+    text-align: center;
+}
