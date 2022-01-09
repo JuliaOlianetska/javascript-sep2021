@@ -1,0 +1,96 @@
+/*
+Стилизация проекта -
+index.html - все блоки с user - по 2 в ряд. кнопки/ссылки находяться под информацией про user.
+user-details.html - блок с информацией про user вверху страницы. Кнопка ниже, на 90% ширины страницы, по центру.
+блоки с краткой информацией про post - в ряд по 5 объектов.
+post-details.html - блок с информацией про пост вверху. Комментарии - по 4 в ряд.
+Все без исключения элементы, который характеризируют user,post,comment  визуализировать, так, что бы было видно их блоки (дать задний фон + margin. Иными словами - крайне четкая сетка)
+*/
+
+.users-info {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 10px;
+    padding: 10px;
+    column-gap: 20px;
+    background: antiquewhite;
+    justify-content: space-between;
+}
+
+.users-info div {
+    width: 45%;
+    margin-bottom: 10px;
+    background: blueviolet;
+    text-align: center;
+}
+
+.detailed-info {
+    background: aquamarine;
+    text-align: center;
+    margin: 5px;
+}
+
+.detailed-info div {
+    background: aqua;
+}
+
+.detailed-info button {
+    background: blueviolet;
+    color: green;
+    font-size: 30px;
+    margin-top: 20px;
+    width: 90%;
+}
+
+.posts-titles {
+    background: bisque;
+}
+
+
+.titles {
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 20px;
+    justify-content: space-around;
+}
+
+.titles li {
+    width: 15%;
+    height: 200px;
+    margin-bottom: 10px;
+    background: burlywood;
+    text-align: justify;
+}
+
+.titles li button {
+    background: brown;
+    border-radius: 50%;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.posts-details {
+    background: cornflowerblue;
+}
+
+.posts-details h4 {
+    background: blue;
+    text-align: center;
+}
+
+.posts-details button {
+    background: aqua;
+    border-radius: 30%;
+}
+
+.comments-description {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 10px;
+    column-gap: 10px;
+    justify-content: space-evenly;
+}
+
+p {
+    margin: 1px;
+}
